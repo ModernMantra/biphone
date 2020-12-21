@@ -1,0 +1,44 @@
+PODS:
+  - CocoaLumberjack (3.7.0):
+    - CocoaLumberjack/Core (= 3.7.0)
+  - CocoaLumberjack/Core (3.7.0)
+  - pjsip (2.9.0.2)
+  - Reachability (3.2)
+  - Realm (10.5.0):
+    - Realm/Headers (= 10.5.0)
+  - Realm/Headers (10.5.0)
+  - RealmSwift (10.5.0):
+    - Realm (= 10.5.0)
+  - Vialer-pjsip-iOS (3.5)
+  - VialerSIPLib (3.7.3):
+    - CocoaLumberjack
+    - Reachability
+    - Vialer-pjsip-iOS
+
+DEPENDENCIES:
+  - pjsip
+  - RealmSwift
+  - VialerSIPLib
+
+SPEC REPOS:
+  trunk:
+    - CocoaLumberjack
+    - pjsip
+    - Reachability
+    - Realm
+    - RealmSwift
+    - Vialer-pjsip-iOS
+    - VialerSIPLib
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: e8955b9d337ac307103b0a34fd141c32f27e53c5
+  pjsip: faa8aa0e79b341155801b87c2ea3015003d05ed9
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  Realm: e1c22c3d83b229afb70ebc10e1771c91e9542d12
+  RealmSwift: 6fc078d9d3fd7e58c71bfdbb694e252462f112a5
+  Vialer-pjsip-iOS: 5ceea9f0e46a7748b2542ba04ca7dacf4de4b51c
+  VialerSIPLib: b77fc823dd1dc4581a25510ef73ba044a2849bb3
+
+PODFILE CHECKSUM: f16afdeb3629ab28f5280ff2afde6697f1bbd663
+
+COCOAPODS: 1.10.0

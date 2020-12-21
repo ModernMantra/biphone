@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhoneViewController" customModule="BiPhone" customModuleProvider="target">
+            <connections>
+                <outlet property="deleteButton" destination="1yM-Rg-hEM" id="7eK-RD-PkG"/>
+                <outlet property="nmbrEightBttn" destination="E2v-lc-u6H" id="8NS-iV-g84"/>
+                <outlet property="nmbrFiveBttn" destination="ZtI-tn-Nxl" id="TJk-Ww-spS"/>
+                <outlet property="nmbrFourBttn" destination="RB7-UW-R5L" id="C8N-AU-m89"/>
+                <outlet property="nmbrNineBttn" destination="VRd-Z5-VOR" id="tqA-Me-Zxf"/>
+                <outlet property="nmbrOneBttn" destination="Xf6-xC-Kgq" id="BbS-0K-TI5"/>
+                <outlet property="nmbrSevenBttn" destination="4g8-13-4BS" id="zio-eH-l7D"/>
+                <outlet property="nmbrSixBttn" destination="Ccz-zR-mLP" id="46t-pj-c62"/>
+                <outlet property="nmbrThreeBttn" destination="tzU-DQ-Mpb" id="SVv-fN-Nhk"/>
+                <outlet property="nmbrTwoBttn" destination="GIA-pb-Rvt" id="d42-1X-hUz"/>
+                <outlet property="nmbrZeroBttn" destination="GSr-91-urm" id="tlp-JN-vmM"/>
+                <outlet property="sharpBttn" destination="b5u-tG-nJM" id="tmc-vD-Nny"/>
+                <outlet property="starBttn" destination="lCe-rp-MxI" id="aT2-hR-kTu"/>
+                <outlet property="titleLabel" destination="b03-jb-lEM" id="Ed0-6n-F8j"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A40-lI-RvM" userLabel="Container View">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ggM-Jb-V98">
+                            <rect key="frame" x="51.666666666666657" y="200.66666666666669" width="310.66666666666674" height="515.33333333333326"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="aa6-1R-8GT">
+                                    <rect key="frame" x="0.0" y="0.0" width="310.66666666666669" height="80"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xf6-xC-Kgq" customClass="KeypadButton" customModule="BiPhone" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                            <color key="backgroundColor" name="phone_keypad"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="80" id="93G-ij-xcW"/>
+                                                <constraint firstAttribute="width" secondItem="Xf6-xC-Kgq" secondAttribute="height" multiplier="1:1" id="ZA2-qZ-D2R"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                                            <state key="normal" title="1">
+                                                <color key="titleColor" name="phone_keypad_text"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="phoneButtonAction:" destination="-1" eventType="touchUpInside" id="Hwh-me-fzT"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GIA-pb-Rvt" customClass="KeypadButton" customModule="BiPhone" customModuleProvider="target">
+                                            <rect key="frame" x="115.33333333333334" y="0.0" width="80" height="80"/>
+                                            <color key="backgroundColor" name="phone_keypad"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="80" id="1h4-7S-sCl"/>
+                                                <constraint firstAttribute="width" secondItem="GIA-pb-Rvt" secondAttribute="height" multiplier="1:1" id="Cc9-S0-IbO"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                                            <state key="normal" title="2">
+                                                <color key="titleColor" name="phone_keypad_text"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="phoneButtonAction:" destination="-1" eventType="touchUpInside" id="zUB-F0-jw5"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tzU-DQ-Mpb" customClass="KeypadButton" customModule="BiPhone" customModuleProvider="target">
+                                            <rect key="frame" x="230.66666666666663" y="0.0" width="80" height="80"/>
+                                            <color key="backgroundColor" name="phone_keypad"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="80" id="F0o-ze-8qM"/>
+                                                <constraint firstAttribute="width" secondItem="tzU-DQ-Mpb" secondAttribute="height" multiplier="1:1" id="FGf-5g-v7g"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                                            <state key="normal" title="3">
+                                                <color key="titleColor" name="phone_keypad_text"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="phoneButtonAction:" destination="-1" eventType="touchUpInside" id="APi-iI-Pyt"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="GIA-pb-Rvt" firstAttribute="width" secondItem="GIA-pb-Rvt" secondAttribute="height" multiplier="1:1" id="F7h-qS-sK9"/>
+                                        <constraint firstItem="tzU-DQ-Mpb" firstAttribute="width" secondItem="tzU-DQ-Mpb" secondAttribute="height" multiplier="1:1" id="IPW-AC-LZy"/>
+                                        <constraint firstItem="tzU-DQ-Mpb" firstAttribute="width" secondItem="tzU-DQ-Mpb" secondAttribute="height" multiplier="1:1" id="bj0-mM-j1O"/>
+                                    </constraints>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="rBK-Mf-J45">
+                                    <rect key="frame" x="0.0" y="109.00000000000003" width="310.66666666666669" height="80"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RB7-UW-R5L" customClass="KeypadButton" customModule="BiPhone" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                            <color key="backgroundColor" name="phone_keypad"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="80" id="BdD-7s-S9W"/>
+                                                <constraint firstAttribute="width" secondItem="RB7-UW-R5L" secondAttribute="height" multiplier="1:1" id="Hln-PO-GN2"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                                            <state key="normal" title="4">
+                                                <color key="titleColor" name="phone_keypad_text"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="phoneButtonAction:" destination="-1" eventType="touchUpInside" id="izB-20-DMR"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZtI-tn-Nxl" customClass="KeypadButton" customModule="BiPhone" customModuleProvider="target">
+                                            <rect key="frame" x="115.33333333333334" y="0.0" width="80" height="80"/>
+                                            <color key="backgroundColor" name="phone_keypad"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="ZtI-tn-Nxl" secondAttribute="height" multiplier="1:1" id="HJf-PM-UQS"/>
+                                                <constraint firstAttribute="width" constant="80" id="zE7-d0-c96"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                                            <state key="normal" title="5">
+                                                <color key="titleColor" name="phone_keypad_text"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="phoneButtonAction:" destination="-1" eventType="touchUpInside" id="gzD-40-o7A"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ccz-zR-mLP" customClass="KeypadButton" customModule="BiPhone" customModuleProvider="target">
+                                            <rect key="frame" x="230.66666666666663" y="0.0" width="80" height="80"/>
+                                            <color key="backgroundColor" name="phone_keypad"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="80" id="J7x-iA-ND8"/>
+                                                <constraint firstAttribute="width" secondItem="Ccz-zR-mLP" secondAttribute="height" multiplier="1:1" id="aU5-kl-c3u"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                                            <state key="normal" title="6">
+                                                <color key="titleColor" name="phone_keypad_text"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="phoneButtonAction:" destination="-1" eventType="touchUpInside" id="aQf-Wu-fjm"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Ccz-zR-mLP" firstAttribute="width" secondItem="Ccz-zR-mLP" secondAttribute="height" multiplier="1:1" id="IyH-yp-UbL"/>
+                                        <constraint firstItem="ZtI-tn-Nxl" firstAttribute="width" secondItem="ZtI-tn-Nxl" secondAttribute="height" multiplier="1:1" id="fin-Be-aL1"/>
+                                        <constraint firstItem="Ccz-zR-mLP" firstAttribute="width" secondItem="Ccz-zR-mLP" secondAttribute="height" multiplier="1:1" id="mBa-ab-mSS"/>
+                                    </constraints>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="JHW-07-pL9">
+                                    <rect key="frame" x="0.0" y="217.66666666666663" width="310.66666666666669" height="80"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4g8-13-4BS" customClass="KeypadButton" customModule="BiPhone" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                            <color key="backgroundColor" name="phone_keypad"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="80" id="B94-hk-Yhg"/>
+                                                <constraint firstAttribute="width" secondItem="4g8-13-4BS" secondAttribute="height" multiplier="1:1" id="Hne-9X-IM7"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                                            <state key="normal" title="7">
+                                                <color key="titleColor" name="phone_keypad_text"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="phoneButtonAction:" destination="-1" eventType="touchUpInside" id="NgR-It-L1q"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2v-lc-u6H" customClass="KeypadButton" customModule="BiPhone" customModuleProvider="target">
+                                            <rect key="frame" x="115.33333333333334" y="0.0" width="80" height="80"/>
+                                            <color key="backgroundColor" name="phone_keypad"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="80" id="Aam-ib-k1y"/>
+                                                <constraint firstAttribute="width" secondItem="E2v-lc-u6H" secondAttribute="height" multiplier="1:1" id="ivA-ij-1DL"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                                            <state key="normal" title="8">
+                                                <color key="titleColor" name="phone_keypad_text"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="phoneButtonAction:" destination="-1" eventType="touchUpInside" id="pr3-fz-Ru8"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRd-Z5-VOR" customClass="KeypadButton" customModule="BiPhone" customModuleProvider="target">
+                                            <rect key="frame" x="230.66666666666663" y="0.0" width="80" height="80"/>
+                                            <color key="backgroundColor" name="phone_keypad"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="80" id="1He-Cm-Q8G"/>
+                                                <constraint firstAttribute="width" secondItem="VRd-Z5-VOR" secondAttribute="height" multiplier="1:1" id="8Zf-z0-RsH"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                                            <state key="normal" title="9">
+                                                <color key="titleColor" name="phone_keypad_text"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="phoneButtonAction:" destination="-1" eventType="touchUpInside" id="IVu-VN-pVS"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="VRd-Z5-VOR" firstAttribute="width" secondItem="VRd-Z5-VOR" secondAttribute="height" multiplier="1:1" id="BSs-U3-3Xw"/>
+                                        <constraint firstItem="VRd-Z5-VOR" firstAttribute="width" secondItem="VRd-Z5-VOR" secondAttribute="height" multiplier="1:1" id="MFU-gk-9ik"/>
+                                        <constraint firstItem="E2v-lc-u6H" firstAttribute="width" secondItem="E2v-lc-u6H" secondAttribute="height" multiplier="1:1" id="mdX-Pp-eIc"/>
+                                    </constraints>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="twm-eT-zo7">
+                                    <rect key="frame" x="0.0" y="326.66666666666674" width="310.66666666666669" height="80"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCe-rp-MxI" customClass="KeypadButton" customModule="BiPhone" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                            <color key="backgroundColor" name="phone_keypad"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="80" id="epb-xa-bRc"/>
+                                                <constraint firstAttribute="width" secondItem="lCe-rp-MxI" secondAttribute="height" multiplier="1:1" id="mm6-cg-1iA"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                            <state key="normal" title="*">
+                                                <color key="titleColor" name="phone_keypad_text"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="phoneButtonAction:" destination="-1" eventType="touchUpInside" id="eyY-nq-21I"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSr-91-urm" customClass="KeypadButton" customModule="BiPhone" customModuleProvider="target">
+                                            <rect key="frame" x="115.33333333333334" y="0.0" width="80" height="80"/>
+                                            <color key="backgroundColor" name="phone_keypad"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="GSr-91-urm" secondAttribute="height" multiplier="1:1" id="Ayc-AY-RCW"/>
+                                                <constraint firstAttribute="width" constant="80" id="FRo-Zp-9XB"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                                            <state key="normal" title="0">
+                                                <color key="titleColor" name="phone_keypad_text"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="phoneButtonAction:" destination="-1" eventType="touchUpInside" id="xgn-LA-Fon"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b5u-tG-nJM" customClass="KeypadButton" customModule="BiPhone" customModuleProvider="target">
+                                            <rect key="frame" x="230.66666666666663" y="0.0" width="80" height="80"/>
+                                            <color key="backgroundColor" name="phone_keypad"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="b5u-tG-nJM" secondAttribute="height" multiplier="1:1" id="175-0V-zbR"/>
+                                                <constraint firstAttribute="width" constant="80" id="v4N-sE-vVI"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                            <state key="normal" title="#">
+                                                <color key="titleColor" name="phone_keypad_text"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="phoneButtonAction:" destination="-1" eventType="touchUpInside" id="drA-hL-LnL"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="GSr-91-urm" firstAttribute="width" secondItem="GSr-91-urm" secondAttribute="height" multiplier="1:1" id="Yrf-Kd-XQE"/>
+                                        <constraint firstItem="b5u-tG-nJM" firstAttribute="width" secondItem="b5u-tG-nJM" secondAttribute="height" multiplier="1:1" id="cp6-IH-7hE"/>
+                                        <constraint firstItem="b5u-tG-nJM" firstAttribute="width" secondItem="b5u-tG-nJM" secondAttribute="height" multiplier="1:1" id="vah-I0-whd"/>
+                                    </constraints>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="A81-Ee-aKy">
+                                    <rect key="frame" x="0.0" y="435.33333333333337" width="310.66666666666669" height="80"/>
+                                    <subviews>
+                                        <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bd-Cr-hOH">
+                                            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="80" id="I3G-6Z-vKt"/>
+                                                <constraint firstAttribute="width" secondItem="5bd-Cr-hOH" secondAttribute="height" multiplier="1:1" id="tIZ-8E-0rn"/>
+                                            </constraints>
+                                            <color key="tintColor" systemColor="systemGray2Color"/>
+                                            <inset key="imageEdgeInsets" minX="35" minY="30" maxX="35" maxY="30"/>
+                                            <state key="normal" image="delete">
+                                                <color key="titleColor" name="phone_keypad_text"/>
+                                            </state>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUc-Mi-IEn" customClass="KeypadButton" customModule="BiPhone" customModuleProvider="target">
+                                            <rect key="frame" x="115.33333333333334" y="0.0" width="80" height="80"/>
+                                            <color key="backgroundColor" name="phone_call"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="eUc-Mi-IEn" secondAttribute="height" multiplier="1:1" id="H6L-5q-rXa"/>
+                                                <constraint firstAttribute="width" constant="80" id="nxE-6q-fZC"/>
+                                            </constraints>
+                                            <inset key="imageEdgeInsets" minX="18" minY="18" maxX="18" maxY="18"/>
+                                            <state key="normal" image="phone">
+                                                <color key="titleColor" name="phone_keypad_text"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="callButtonAction:" destination="-1" eventType="touchUpInside" id="jmp-9H-4nb"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yM-Rg-hEM">
+                                            <rect key="frame" x="230.66666666666663" y="0.0" width="80" height="80"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="80" id="DVe-Tu-nka"/>
+                                                <constraint firstAttribute="width" secondItem="1yM-Rg-hEM" secondAttribute="height" multiplier="1:1" id="PJc-SN-VaZ"/>
+                                            </constraints>
+                                            <color key="tintColor" systemColor="systemGray2Color"/>
+                                            <inset key="imageEdgeInsets" minX="18" minY="20" maxX="18" maxY="20"/>
+                                            <state key="normal" image="delete">
+                                                <color key="titleColor" name="phone_keypad_text"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="deleteButtonAction:" destination="-1" eventType="touchUpInside" id="5lK-mF-qtB"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="5bd-Cr-hOH" firstAttribute="width" secondItem="5bd-Cr-hOH" secondAttribute="height" multiplier="1:1" id="DkY-rR-UcM"/>
+                                        <constraint firstItem="5bd-Cr-hOH" firstAttribute="width" secondItem="5bd-Cr-hOH" secondAttribute="height" multiplier="1:1" id="OGw-8z-bDL"/>
+                                        <constraint firstItem="1yM-Rg-hEM" firstAttribute="width" secondItem="1yM-Rg-hEM" secondAttribute="height" multiplier="1:1" id="Vhd-t6-8Lz"/>
+                                        <constraint firstItem="5bd-Cr-hOH" firstAttribute="width" secondItem="5bd-Cr-hOH" secondAttribute="height" multiplier="1:1" id="flt-jX-gCM"/>
+                                        <constraint firstItem="1yM-Rg-hEM" firstAttribute="width" secondItem="1yM-Rg-hEM" secondAttribute="height" multiplier="1:1" id="im7-Qg-ZHw"/>
+                                        <constraint firstItem="5bd-Cr-hOH" firstAttribute="width" secondItem="5bd-Cr-hOH" secondAttribute="height" multiplier="1:1" id="o9u-xN-Ahh"/>
+                                        <constraint firstItem="1yM-Rg-hEM" firstAttribute="width" secondItem="1yM-Rg-hEM" secondAttribute="height" multiplier="1:1" id="pTT-yV-t8T"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0vg-st-HgL">
+                            <rect key="frame" x="51.666666666666657" y="0.0" width="310.66666666666674" height="200.66666666666666"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b03-jb-lEM">
+                                    <rect key="frame" x="0.0" y="100.33333333333333" width="310.66666666666669" height="0.0"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                                    <color key="textColor" systemColor="systemGray2Color"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="b03-jb-lEM" secondAttribute="trailing" id="Ehg-QT-WuZ"/>
+                                <constraint firstItem="b03-jb-lEM" firstAttribute="centerX" secondItem="0vg-st-HgL" secondAttribute="centerX" id="dsl-zj-S63"/>
+                                <constraint firstItem="b03-jb-lEM" firstAttribute="centerY" secondItem="0vg-st-HgL" secondAttribute="centerY" id="nQA-J5-eHT"/>
+                                <constraint firstItem="b03-jb-lEM" firstAttribute="leading" secondItem="0vg-st-HgL" secondAttribute="leading" id="r66-4R-JHO"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="ggM-Jb-V98" firstAttribute="width" secondItem="A40-lI-RvM" secondAttribute="width" multiplier="0.75" id="4Do-Wi-3hf"/>
+                        <constraint firstItem="ggM-Jb-V98" firstAttribute="top" secondItem="0vg-st-HgL" secondAttribute="bottom" id="KAX-Hv-fOK"/>
+                        <constraint firstItem="0vg-st-HgL" firstAttribute="centerX" secondItem="A40-lI-RvM" secondAttribute="centerX" id="Rob-mF-vn6"/>
+                        <constraint firstItem="ggM-Jb-V98" firstAttribute="height" secondItem="A40-lI-RvM" secondAttribute="height" multiplier="0.7" id="ZTj-Jz-s5C"/>
+                        <constraint firstItem="0vg-st-HgL" firstAttribute="width" secondItem="ggM-Jb-V98" secondAttribute="width" id="e6s-Pj-T0D"/>
+                        <constraint firstItem="ggM-Jb-V98" firstAttribute="centerX" secondItem="A40-lI-RvM" secondAttribute="centerX" id="jBF-Fx-ZCs"/>
+                        <constraint firstAttribute="bottom" secondItem="ggM-Jb-V98" secondAttribute="bottom" constant="20" id="kuz-O8-XTg"/>
+                        <constraint firstItem="0vg-st-HgL" firstAttribute="top" secondItem="A40-lI-RvM" secondAttribute="top" id="q2J-gZ-kAw"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="A40-lI-RvM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="IgV-pH-rVz"/>
+                <constraint firstItem="A40-lI-RvM" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="KWk-aX-ZPU"/>
+                <constraint firstItem="A40-lI-RvM" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Msk-Di-6oF"/>
+                <constraint firstItem="A40-lI-RvM" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="rbX-Un-xFk"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="124.72826086956523"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="4g8-13-4BS">
+            <size key="intrinsicContentSize" width="30" height="59"/>
+        </designable>
+        <designable name="Ccz-zR-mLP">
+            <size key="intrinsicContentSize" width="30" height="59"/>
+        </designable>
+        <designable name="E2v-lc-u6H">
+            <size key="intrinsicContentSize" width="30" height="59"/>
+        </designable>
+        <designable name="GIA-pb-Rvt">
+            <size key="intrinsicContentSize" width="30" height="59"/>
+        </designable>
+        <designable name="GSr-91-urm">
+            <size key="intrinsicContentSize" width="30" height="59"/>
+        </designable>
+        <designable name="RB7-UW-R5L">
+            <size key="intrinsicContentSize" width="30" height="59"/>
+        </designable>
+        <designable name="VRd-Z5-VOR">
+            <size key="intrinsicContentSize" width="30" height="59"/>
+        </designable>
+        <designable name="Xf6-xC-Kgq">
+            <size key="intrinsicContentSize" width="30" height="59"/>
+        </designable>
+        <designable name="ZtI-tn-Nxl">
+            <size key="intrinsicContentSize" width="30" height="59"/>
+        </designable>
+        <designable name="b5u-tG-nJM">
+            <size key="intrinsicContentSize" width="30" height="47"/>
+        </designable>
+        <designable name="eUc-Mi-IEn">
+            <size key="intrinsicContentSize" width="96" height="96"/>
+        </designable>
+        <designable name="lCe-rp-MxI">
+            <size key="intrinsicContentSize" width="30" height="47"/>
+        </designable>
+        <designable name="tzU-DQ-Mpb">
+            <size key="intrinsicContentSize" width="30" height="59"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="delete" width="96" height="96"/>
+        <image name="phone" width="96" height="96"/>
+        <namedColor name="phone_call">
+            <color red="0.20399999618530273" green="0.77999997138977051" blue="0.34900000691413879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="phone_keypad">
+            <color red="0.86274509803921573" green="0.86274509803921573" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="phone_keypad_text">
+            <color red="0.26100000739097595" green="0.26100000739097595" blue="0.26100000739097595" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
